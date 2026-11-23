@@ -1,0 +1,62 @@
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.time-number {
+font-size: 3.4rem;
+}
+
+.date-editor {
+flex-direction: row;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<header>
+<span class="badge">Matemática Aplicada &bull; Start by Alura</span>
+<h1>Meus Objetivos <span>2026</span></h1>
+<p class="subtitle">Organizando metas futuras com conversão dinâmica de tempo</p>
+</header>
+
+<!
+-Botões de Navegação entre Objetivos -->
+<nav class="tabs" aria-label="Lista de Objetivos">
+<button class="tab-btn active" data-index="0">Concluir Cursos Alura</button>
+<button class="tab-btn" data-index="1">Criar Portfólio Web</button>
+<button class="tab-btn" data-index="2">Dominar JavaScript</button>
+<button class="tab-btn" data-index="3">Atualizar Currículo</button>
+</nav>
+<!
+-Conteúdo Dinâmico -->
+<main class="panel">
+<!
+-Objetivo 1 -->
+<section class="tab-content active" id="goal-0">
+<div class="goal-header">
+<h2 class="goal-title">Concluir todos os cursos da trilha de programação</h2>
+<p class="goal-subtitle">Tempo restante para completar o objetivo</p>
+</div>
+<div class="countdown-grid">
+<div class="time-box">
+<div class="time-number" id="days-0">00</div>
+<div class="time-label">Dias</div>
+</div>
+<div class="time-box">
+<div class="time-number" id="hours-0">00</div>
+<div class="time-label">Horas</div>
+</div>
+<div class="time-box">
+<div class="time-number" id="minutes-0">00</div>
+<div class="time-label">Minutos</div>
+</div>
+<div class="time-box">
+<div class="time-number" id="seconds-0">00</div>
+<div class="time-label">Segundos</div>
+</div>
+</div>
+<div class="date-editor">
+<label for="date-input-0">Alterar data limite deste objetivo:</label>
+<input type="date" id="date-input-0" data-index="0">
